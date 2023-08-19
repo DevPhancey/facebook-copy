@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>facebook</h2>
+    </div>
+
+    <div class="input">
+        <label for="name">
+            <input type="text" name="name" id="name" placeholder="mobile number or email address">
+        </label>
+        <br>
+        <br>
+        <label for="password">
+            <input type="password" name="password" id="password" placeholder="password">
+        </label>
+    </div>
+    <br>
+    <br>
+
+    <a href="#">
+        <div class="log-in">
+            log In</div>
+    </a>
+    <br>
+    <br>
+    <a href="#">
+        <div class="forgotten-password">forgotten password?</div>
+    </a>
+    <br>
+    <br>
+
+    <hr>
+    <br>
+    <br>
+    <a href="#">
+        <h3 class="account">Create New Account</h3>
+    </a>
+
+
+    <div class="parent">
+        <div class="div1"><a href="#">English (UK)</a></div>
+        <div class="div2"><a href="#">Francais (France)</a>  </div>
+        <div class="div3"> <a href="#">Espanol</a> </div>
+        <div class="div4"> <a href="#">Deutsch</a></div>
+        <div class="div5"> <a href="#">Hausa</a></div>
+        <div class="div6"> <a href="#">Portugues</a> </div>
+        <div class="div7"></div>
+    </div>
+
+
+    <br>
+
+
+    <div class="bottom">
+        <span>  <a href="#">About</a> </span>
+        <span> <a href="#">Help</a> </span>
+        <span> <a href="#">Help</a> </span>
+    </div>
+    <br>
+    <div class="tags">
+        Meta &copy 2023
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+ hr {
+     margin-right: 48px;
+     margin-left: 25px;
+
+ }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: larger;
+    color: #1778f2;
+    font-size: 2rem;
+}
+
+.log-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4267B2;
+    padding: 15px;
+    color: white;
+    margin: 20px 100px;
+    border-radius: 25px;
+}
+
+.forgotten-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    margin: auto;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px;
+    background-color: green;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-left: auto;
+    text-decoration: none;
+}
+
+#name {
+    /* margin: 20px; */
+    padding: 10px 20px;
+    /* padding-right: 300px; */
+    background-color: whitesmoke;
+    margin-left: 25px;
+    width: 450px;
+}
+
+#password {
+        margin-left: 25px;
+    padding: 10px 20px;
+    width: 450px;
+    background-color: whitesmoke;
+}
+
+placeholder {
+    margin-left:50px;
+    /* text-transform: capitalize; */
+    /* padding-right: 50px; */
+}
+
+.input {
+    /* text-transform: capitalize; */
+    color: blue;
+    /* align-content: flex-end; */
+    /* border-radius: 15px; */
+
+}
+
+.language {
+    display: flex;
+    text-align: justify;
+    justify-content: left;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    padding: 0 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tags {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: larger;
+    margin-bottom: 50px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+}
+
+.div1 {
+    grid-area: 4 / 2 / 5 / 4;
+}
+
+.div2 {
+    grid-area: 5 / 2 / 6 / 4;
+}
+
+.div3 {
+    grid-area: 6 / 2 / 7 / 4;
+}
+
+.div4 {
+    grid-area: 7 / 2 / 8 / 4;
+}
+
+.div5 {
+    grid-area: 4 / 10 / 5 / 12;
+}
+
+.div6 {
+    grid-area: 5 / 10 / 6 / 12;
+}
+
+.div7 {
+    grid-area: 6 / 10 / 8 / 12;
+}
+
+#name,
+#password {
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: solid;
+    border-radius: 15px;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+        body {
+            margin-left: 400px;
+            margin-right: 400px;
+            border: 3px;
+        }
+
+@media (max-width: 768px) {
+
+   
+}
